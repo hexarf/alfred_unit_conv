@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>unit_conv</string>
+	<key>connections</key>
+	<dict>
+		<key>C8551A8F-D3E4-4201-A5C4-2F65DF60606C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BE12C9BB-CEEE-4DBE-9CB6-475406438E32</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>629D14A6-61EB-42AC-A1CD-B4A669C72BC4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Byungjun,Park</string>
+	<key>description</key>
+	<string>Unit converter ver 0.2</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Unit converter</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>copied to clipboard</string>
+				<key>title</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>BE12C9BB-CEEE-4DBE-9CB6-475406438E32</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>126</integer>
+				<key>keyword</key>
+				<string>u</string>
+				<key>script</key>
+				<string>#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+import unit_conv
+
+#unit_conv.convert(unicode("{query}",'utf-8'))
+unit_conv.convert(u'{query}')</string>
+				<key>subtext</key>
+				<string>ver 0.2</string>
+				<key>title</key>
+				<string>Unit converter</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>C8551A8F-D3E4-4201-A5C4-2F65DF60606C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>629D14A6-61EB-42AC-A1CD-B4A669C72BC4</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>629D14A6-61EB-42AC-A1CD-B4A669C72BC4</key>
+		<dict>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
+		<key>BE12C9BB-CEEE-4DBE-9CB6-475406438E32</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>C8551A8F-D3E4-4201-A5C4-2F65DF60606C</key>
+		<dict>
+			<key>ypos</key>
+			<real>140</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://twitter.com/hexarf</string>
+</dict>
+</plist>
